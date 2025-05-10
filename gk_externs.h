@@ -16,7 +16,7 @@
 **************************************************************************/
 #ifndef _GK_ERROR_C_
 /* declared in error.c */
-extern _Thread_local gk_cur_jbufs;
+extern _Thread_local int gk_cur_jbufs;
 extern _Thread_local jmp_buf gk_jbufs[];
 extern _Thread_local jmp_buf gk_jbuf;
 
