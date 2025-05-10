@@ -53,9 +53,6 @@ install(TARGETS GKlib EXPORT ${PROJECT_NAME}-targets)
 install(FILES GKlib.h TYPE INCLUDE)
 # must have trailing slash or it makes a vestigial subdir
 install(DIRECTORY ${PROJECT_SOURCE_DIR}/ TYPE INCLUDE
-FILES_MATCHING PATTERN "gk_*.h")
-if(WIN32)
-install(DIRECTORY ${win32_inc}/ TYPE INCLUDE)
-endif()
+FILES_MATCHING PATTERN "*.h")
 
 include(cmake/install.cmake)
