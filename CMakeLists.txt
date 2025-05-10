@@ -33,7 +33,7 @@ error.c		gk_util.c	itemsets.c	rw.c		tokenizer.c)
 
 add_library(GKlib ${GKlib_sources} ${win32_sources})
 target_include_directories(GKlib PUBLIC
-$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>
 $<INSTALL_INTERFACE:include>
 )
 target_link_libraries(GKlib PRIVATE
